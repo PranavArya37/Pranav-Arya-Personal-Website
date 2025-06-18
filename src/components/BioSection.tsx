@@ -86,9 +86,9 @@ const BioSection: React.FC = () => {
               ))}
             </div>
 
-            {/* Newsletter Button */}
+            {/* YouTube Button */}
             <button className="bg-accent hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
-              Subscribe to Newsletter
+              Subscribe to YouTube
             </button>
           </div>
         </div>
