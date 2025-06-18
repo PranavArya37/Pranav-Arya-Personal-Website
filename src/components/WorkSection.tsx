@@ -14,21 +14,21 @@ interface ProjectProps {
 
 const projects: ProjectProps[] = [
   {
-    title: 'Brand Identity System',
-    description: 'Complete visual identity for a tech startup, including logo design, color palette, and brand guidelines.',
+    title: 'E-Commerce Platform',
+    description: 'Full-stack web application built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and real-time inventory management.',
+    image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
+    link: '#',
+  },
+  {
+    title: 'Task Management App',
+    description: 'React-based productivity application with drag-and-drop functionality, real-time collaboration, and advanced filtering capabilities.',
     image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
     link: '#',
   },
   {
-    title: 'Digital Campaign',
-    description: 'Multi-channel digital campaign that increased brand awareness by 200% and generated 50% more leads.',
+    title: 'API Gateway Service',
+    description: 'Microservices architecture with Node.js and Docker, handling authentication, rate limiting, and request routing for multiple backend services.',
     image: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600',
-    link: '#',
-  },
-  {
-    title: 'E-commerce Platform',
-    description: 'User experience design for a luxury fashion e-commerce platform with a focus on premium aesthetics.',
-    image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
     link: '#',
   },
 ];
@@ -72,11 +72,11 @@ const WorkSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6">
-            Featured Work
+            Featured Projects
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            A selection of projects that showcase my approach to creative problem-solving
-            and strategic thinking.
+            A showcase of my recent software development projects, demonstrating 
+            my skills in full-stack development and modern web technologies.
           </p>
         </div>
 

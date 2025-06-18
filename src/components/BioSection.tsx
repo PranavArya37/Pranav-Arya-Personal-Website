@@ -61,14 +61,15 @@ const BioSection: React.FC = () => {
                 About Me
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                With over a decade of experience in creative direction and digital strategy, 
-                I've had the privilege of working with Fortune 500 companies and innovative 
-                startups to craft compelling brand experiences that resonate with audiences 
-                and drive meaningful results.
+                I'm a passionate software engineer with expertise in full-stack development, 
+                specializing in React, Node.js, and modern web technologies. I love building 
+                scalable applications that solve real-world problems and deliver exceptional 
+                user experiences.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                My approach combines analytical thinking with creative intuition, ensuring 
-                every project not only looks exceptional but also performs at the highest level.
+                When I'm not coding, you'll find me exploring new technologies, contributing 
+                to open-source projects, or sharing my knowledge through technical content 
+                and mentoring fellow developers.
               </p>
             </div>
 

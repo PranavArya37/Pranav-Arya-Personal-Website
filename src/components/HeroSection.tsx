@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
           ref={bioRef}
           className="text-xl md:text-2xl font-light text-gray-300 mb-16 max-w-2xl mx-auto"
         >
-          Creative Director & Digital Strategist crafting meaningful experiences
+          Software Engineer building innovative solutions with modern technologies
         </p>
       </div>
 

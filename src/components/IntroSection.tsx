@@ -33,10 +33,9 @@ const IntroSection: React.FC = () => {
           ref={textRef}
           className="text-3xl md:text-4xl lg:text-5xl font-light text-white leading-relaxed tracking-tight"
         >
-          I believe in the power of{' '}
-          <span className="text-accent font-semibold">design</span> to tell
-          stories, build connections, and create lasting impact in the digital
-          world.
+          I'm passionate about{' '}
+          <span className="text-accent font-semibold">clean code</span>, scalable
+          architecture, and creating digital experiences that make a difference.
         </p>
       </div>
     </section>
