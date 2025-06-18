@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 mb-4 md:mb-0">
             <p className="flex items-center">
-              Made with <Heart size={16} className="mx-2 text-red-500" />❤️ by Pranav Arya
+              Made with ❤️ by Pranav Arya
             </p>
           </div>
           
