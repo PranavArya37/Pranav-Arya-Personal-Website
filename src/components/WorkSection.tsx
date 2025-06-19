@@ -14,8 +14,8 @@ interface ProjectProps {
 
 const projects: ProjectProps[] = [
   {
-    title: 'E-Commerce Platform',
-    description: 'Full-stack web application built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and real-time inventory management.',
+    title: 'Stay Awake',
+    description: 'Keep your screen awake! A web app preventing sleep mode only while this tab is active (foreground). Features draggable & toggleable widgets: Clock ⏰, Battery 🔋, To-Do List ✅, and Pomodoro Timer 🍅. Installable as a PWA.',
     image: '/StayAwake_Minimal_Mode_Awake.jpeg',
     link: '#',
   },
