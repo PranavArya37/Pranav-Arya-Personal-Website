@@ -16,7 +16,7 @@ const projects: ProjectProps[] = [
   {
     title: 'E-Commerce Platform',
     description: 'Full-stack web application built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and real-time inventory management.',
-    image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/StayAwake_Minimal_Mode_Awake.jpeg',
     link: '#',
   },
   {
