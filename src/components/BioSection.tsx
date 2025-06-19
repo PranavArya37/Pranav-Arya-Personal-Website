@@ -86,9 +86,14 @@ const BioSection: React.FC = () => {
             </div>
 
             {/* YouTube Button */}
-            <button className="bg-[#FF0000] hover:bg-[#CC0000] text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
+            <a
+              href="https://www.youtube.com/@pranav_arya"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#FF0000] hover:bg-[#CC0000] text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
+            >
               Subscribe to YouTube Channel
-            </button>
+            </a>
           </div>
         </div>
       </div>
