@@ -67,6 +67,10 @@ const WorkSection: React.FC = () => {
     }
   };
 
+  const handleProjectClick = (link: string) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section id="work" ref={sectionRef} className="py-24 bg-dark-800">
       <div className="max-w-7xl mx-auto px-6">
@@ -86,6 +90,16 @@ const WorkSection: React.FC = () => {
               key={index}
               ref={addToRefs}
               className="group cursor-pointer"
+              onClick={() => handleProjectClick(project.link)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  handleProjectClick(project.link);
+                }
+              }}
+              aria-label={`View ${project.title} project`}
             >
               <div className="relative overflow-hidden rounded-lg mb-6 hover-scale">
                 <img
