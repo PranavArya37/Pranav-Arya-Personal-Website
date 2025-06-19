@@ -61,15 +61,13 @@ const BioSection: React.FC = () => {
                 About Me
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I'm a passionate software engineer with expertise in full-stack development, 
-                specializing in React, Node.js, and modern web technologies. I love building 
-                scalable applications that solve real-world problems and deliver exceptional 
-                user experiences.
+                I'm a passionate software engineer specializing in <span className="text-accent font-medium">React</span>, <span className="text-accent font-medium">JavaScript</span>, <span className="text-accent font-medium">Java</span>, <span className="text-accent font-medium">Node.js</span>, and <span className="text-accent font-medium">React Native</span>. I love building scalable applications with modern web technologies and creating indie projects that solve real-world problems.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                Beyond coding, I'm deeply curious about everything around me—always questioning the "why" and "how" behind every task I undertake. I'm an avid space enthusiast who enjoys reading books, listening to music, and exploring new AI tools that push the boundaries of what's possible.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing 
-                to open-source projects, or sharing my knowledge through technical content 
-                and mentoring fellow developers.
+                When I'm not building applications, you'll find me vibe coding on personal projects, diving deep into new technologies, or simply exploring and learning about anything that sparks my curiosity.
               </p>
             </div>
 

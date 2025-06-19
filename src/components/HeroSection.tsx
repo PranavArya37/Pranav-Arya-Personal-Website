@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
           ref={bioRef}
           className="text-xl md:text-2xl font-light text-gray-300 mb-16 max-w-2xl mx-auto"
         >
-          Software Engineer building innovative solutions with modern technologies
+          Software Engineer specializing in React, JavaScript, Java, and modern web technologies
         </p>
       </div>
 
