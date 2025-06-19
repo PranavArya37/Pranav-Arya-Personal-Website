@@ -26,10 +26,10 @@ const projects: ProjectProps[] = [
     link: 'https://instacaptionxp.vercel.app/',
   },
   {
-    title: 'API Gateway Service',
-    description: 'Microservices architecture with Node.js and Docker, handling authentication, rate limiting, and request routing for multiple backend services.',
-    image: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600',
-    link: '#',
+    title: 'Business Directory App',
+    description: 'A React Native mobile app built with Expo that makes exploring local businesses easy! Search, discover, and connect with businesses in your community. Built with Firebase and Clerk.',
+    image: '/HomeScreen.PNG',
+    link: 'https://github.com/PranavArya37/Business-Directory-App',
   },
 ];
 
