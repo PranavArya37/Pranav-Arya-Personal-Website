@@ -17,13 +17,13 @@ const projects: ProjectProps[] = [
     title: 'Stay Awake',
     description: 'Keep your screen awake! A web app preventing sleep mode only while this tab is active (foreground). Features draggable & toggleable widgets: Clock ⏰, Battery 🔋, To-Do List ✅, and Pomodoro Timer 🍅. Installable as a PWA.',
     image: '/StayAwake_Minimal_Mode_Awake.jpeg',
-    link: '#',
+    link: 'https://stayawake.pages.dev',
   },
   {
-    title: 'Task Management App',
-    description: 'React-based productivity application with drag-and-drop functionality, real-time collaboration, and advanced filtering capabilities.',
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
-    link: '#',
+    title: 'InstaCaption',
+    description: 'AI-powered Instagram caption generator. Upload your photo and get creative captions instantly! Built with Next.js, Genkit, and ShadCN UI.',
+    image: '/InstaCaption-Full.jpeg',
+    link: 'https://instacaptionxp.vercel.app/',
   },
   {
     title: 'API Gateway Service',
