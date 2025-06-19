@@ -77,6 +77,8 @@ const BioSection: React.FC = () => {
                 <a
                   key={label}
                   href={href}
+                  target={href.startsWith('mailto:') ? '_self' : '_blank'}
+                  rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
                   aria-label={label}
                   className="text-gray-400 hover:text-accent transition-all duration-300 transform hover:scale-105"
                 >
