@@ -43,6 +43,12 @@ const projects: ProjectProps[] = [
     image: '/splash-personal-task-manager.png',
     link: 'https://github.com/PranavArya37/PersonalTaskManager-App',
   },
+  {
+    title: 'Kaleidoscope',
+    description: 'Interactive kaleidoscope using p5.js that generates symmetrical patterns based on mouse movement.',
+    image: '/kaleidoscope-pattern.jpg',
+    link: 'https://pranavarya37.github.io/Kaleidoscope/',
+  },
 ];
 
 const WorkSection: React.FC = () => {
