@@ -32,10 +32,10 @@ const projects: ProjectProps[] = [
     link: 'https://github.com/PranavArya37/Business-Directory-App',
   },
   {
-    title: 'Pranav Arya',
-    description: 'A React Native mobile app built with Expo that makes exploring local businesses easy! Search, discover, and connect with businesses in your community. Built with Firebase and Clerk.',
-    image: '/HomeScreen.PNG',
-    link: 'https://github.com/PranavArya37/Business-Directory-App',
+    title: 'CurrencyXpress',
+    description: 'CurrencyXpress is a modern web application that allows users to convert amounts between various currencies with real-time exchange rates. It also provides a history of past conversions.',
+    image: '/currencyXpress - Full Screenshot 1.jpeg',
+    link: 'https://github.com/PranavArya37/currencyXpress',
   },
 ];
 
