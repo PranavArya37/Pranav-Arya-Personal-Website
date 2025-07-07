@@ -35,7 +35,7 @@ const projects: ProjectProps[] = [
     title: 'CurrencyXpress',
     description: 'CurrencyXpress is a modern web application that allows users to convert amounts between various currencies with real-time exchange rates. It also provides a history of past conversions.',
     image: '/currencyXpress - Full Screenshot 1.jpeg',
-    link: 'https://github.com/PranavArya37/currencyXpress',
+    link: 'https://currencyxpress.vercel.app/',
   },
 ];
 
