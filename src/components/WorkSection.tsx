@@ -37,6 +37,12 @@ const projects: ProjectProps[] = [
     image: '/currencyXpress - Full Screenshot 1.jpeg',
     link: 'https://currencyxpress.vercel.app/',
   },
+  {
+    title: 'Personal Task Manager',
+    description: 'Personal Task Manager is a React Native application built with Expo, designed to help users manage their tasks efficiently. This app allows users to create, update, and delete tasks, filter tasks based on their status, and set due dates for tasks.',
+    image: '/AllTasksScreen.PNG',
+    link: 'https://github.com/PranavArya37/PersonalTaskManager-App',
+  },
 ];
 
 const WorkSection: React.FC = () => {
