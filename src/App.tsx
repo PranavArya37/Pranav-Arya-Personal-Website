@@ -11,11 +11,19 @@ function App() {
   return (
     <div className="font-inter">
       <Navbar />
-      <HeroSection />
+      <div id="home">
+        <HeroSection />
+      </div>
       <IntroSection />
-      <BioSection />
-      <WorkSection />
-      <ContactSection />
+      <section id="about">
+        <BioSection />
+      </section>
+      <section id="work">
+        <WorkSection />
+      </section>
+      <section id="contact">
+        <ContactSection />
+      </section>
       <Footer />
     </div>
   );
