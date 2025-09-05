@@ -72,7 +72,7 @@ const BioSection: React.FC = () => {
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 For a quick summary of my profile, you can also try this command in your terminal:
               </p>
-              <code className="text-accent font-mono bg-white px-3 py-2 rounded text-sm">
+              <code className="text-black font-bold font-mono bg-white px-3 py-2 rounded text-sm">
                 npx pranavarya
               </code>
             </div>
