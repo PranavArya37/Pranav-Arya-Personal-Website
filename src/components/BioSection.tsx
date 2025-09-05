@@ -123,7 +123,7 @@ const BioSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-1">
               {/* Social Links */}
               <div className="flex space-x-6">
                 {socialLinks.map(({ icon: Icon, href, label }) => (
