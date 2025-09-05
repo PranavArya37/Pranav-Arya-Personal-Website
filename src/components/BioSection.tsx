@@ -101,7 +101,7 @@ const BioSection: React.FC = () => {
           </div>
 
           {/* Bio Content */}
-          <div ref={contentRef} className="space-y-6 flex flex-col justify-between h-full">
+          <div ref={contentRef} className="space-y-4 flex flex-col justify-between h-full">
             <div>
               <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6">
                 About Me
