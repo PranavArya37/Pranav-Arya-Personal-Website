@@ -118,7 +118,7 @@ const BioSection: React.FC = () => {
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 For a quick summary of my profile, you can also try this command in your terminal:
               </p>
-              <div className="mb-4">
+              <div className="mb-2">
                 <CodeBlock code="npx pranavarya" />
               </div>
             </div>
