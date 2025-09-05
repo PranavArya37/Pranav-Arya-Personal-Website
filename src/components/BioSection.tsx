@@ -118,10 +118,12 @@ const BioSection: React.FC = () => {
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 For a quick summary of my profile, you can also try this command in your terminal:
               </p>
-              <CodeBlock code="npx pranavarya" />
+              <div className="mb-4">
+                <CodeBlock code="npx pranavarya" />
+              </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-6">
               {/* Social Links */}
               <div className="flex space-x-6">
                 {socialLinks.map(({ icon: Icon, href, label }) => (
