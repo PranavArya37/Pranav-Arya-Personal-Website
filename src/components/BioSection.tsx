@@ -72,7 +72,7 @@ const BioSection: React.FC = () => {
             </div>
 
             <div className="bg-dark-700 rounded-lg p-4 border border-gray-600">
-              <p className="text-gray-300 mb-2">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 For a quick summary of my profile, you can also try this command in your terminal:
               </p>
               <code className="text-accent font-mono bg-black px-3 py-2 rounded text-sm">
