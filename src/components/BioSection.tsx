@@ -1,9 +1,55 @@
 import React, { useEffect, useRef } from 'react';
-import { Mail, Linkedin, Github, Twitter, Instagram } from 'lucide-react';
+import { Mail, Linkedin, Github, Twitter, Instagram, Copy, Check } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
+
+interface CodeBlockProps {
+  code: string;
+}
+
+const CodeBlock: React.FC<CodeBlockProps> = ({ code }) => {
+  const [copied, setCopied] = React.useState(false);
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
+
+  return (
+    <div className="relative bg-gray-900 border border-gray-700 rounded-lg p-6 my-6">
+      <div className="flex items-center justify-between mb-2">
+        <span className="text-gray-400 text-sm font-medium">Terminal</span>
+        <button
+          onClick={copyToClipboard}
+          className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200 p-2 rounded hover:bg-gray-800"
+          aria-label="Copy code to clipboard"
+        >
+          {copied ? (
+            <>
+              <Check size={16} className="text-green-400" />
+              <span className="text-sm text-green-400">Copied!</span>
+            </>
+          ) : (
+            <>
+              <Copy size={16} />
+              <span className="text-sm">Copy</span>
+            </>
+          )}
+        </button>
+      </div>
+      <code className="text-green-400 font-mono text-lg block bg-black px-4 py-3 rounded border border-gray-800">
+        {code}
+      </code>
+    </div>
+  );
+};
 
 const BioSection: React.FC = () => {
   const imageRef = useRef<HTMLDivElement>(null);
@@ -72,9 +118,7 @@ const BioSection: React.FC = () => {
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 For a quick summary of my profile, you can also try this command in your terminal:
               </p>
-              <code className="text-black font-bold font-mono bg-white px-3 py-2 rounded text-sm">
-                npx pranavarya
-              </code>
+              <CodeBlock code="npx pranavarya" />
             </div>
 
             {/* Social Links */}
