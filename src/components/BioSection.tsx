@@ -69,9 +69,6 @@ const BioSection: React.FC = () => {
               <p className="text-lg text-gray-300 leading-relaxed">
                 When I'm not building applications, you'll find me vibe coding on personal projects, diving deep into new technologies, or simply exploring and learning about anything that sparks my curiosity.
               </p>
-            </div>
-
-            <div className="bg-dark-700 rounded-lg p-4 border border-gray-600">
               <p className="text-lg text-gray-300 leading-relaxed">
                 For a quick summary of my profile, you can also try this command in your terminal:
               </p>
