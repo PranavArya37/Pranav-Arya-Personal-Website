@@ -88,20 +88,20 @@ const BioSection: React.FC = () => {
   return (
     <section id="about" className="py-24 bg-dark-900">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Portrait */}
-          <div ref={imageRef} className="relative">
-            <div className="aspect-[3/4] rounded-lg overflow-hidden">
+          <div ref={imageRef} className="relative h-full">
+            <div className="h-full rounded-lg overflow-hidden">
               <img
                 src="/Pranav's New Image.jpg"
                 alt="Pranav Arya"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
           </div>
 
           {/* Bio Content */}
-          <div ref={contentRef} className="space-y-8">
+          <div ref={contentRef} className="space-y-6 flex flex-col justify-between h-full">
             <div>
               <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6">
                 About Me
@@ -121,31 +121,33 @@ const BioSection: React.FC = () => {
               <CodeBlock code="npx pranavarya" />
             </div>
 
-            {/* Social Links */}
-            <div className="flex space-x-6">
-              {socialLinks.map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target={href.startsWith('mailto:') ? '_self' : '_blank'}
-                  rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-                  aria-label={label}
-                  className="text-gray-400 hover:text-accent transition-all duration-300 transform hover:scale-105"
-                >
-                  <Icon size={24} />
-                </a>
-              ))}
-            </div>
+            <div className="space-y-4">
+              {/* Social Links */}
+              <div className="flex space-x-6">
+                {socialLinks.map(({ icon: Icon, href, label }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target={href.startsWith('mailto:') ? '_self' : '_blank'}
+                    rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                    aria-label={label}
+                    className="text-gray-400 hover:text-accent transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Icon size={24} />
+                  </a>
+                ))}
+              </div>
 
-            {/* YouTube Button */}
-            <a
-              href="https://www.youtube.com/@pranav_arya"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#FF0000] hover:bg-[#CC0000] text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
-            >
-              Subscribe to YouTube Channel
-            </a>
+              {/* YouTube Button */}
+              <a
+                href="https://www.youtube.com/@pranav_arya"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#FF0000] hover:bg-[#CC0000] text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
+              >
+                Subscribe to YouTube Channel
+              </a>
+            </div>
           </div>
         </div>
       </div>
