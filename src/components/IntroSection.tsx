@@ -34,8 +34,8 @@ const IntroSection: React.FC = () => {
           className="text-3xl md:text-4xl lg:text-5xl font-light text-white leading-relaxed tracking-tight"
         >
           I'm passionate about{' '}
-          <span className="text-accent font-semibold">React</span> and{' '}
-          <span className="text-accent font-semibold">JavaScript</span>, creating{' '}
+          <span className="text-accent font-semibold">React</span>,{' '}
+          <span className="text-accent font-semibold">JavaScript</span> and <span className="text-accent font-semibold">Java</span>, creating{' '}
           <span className="text-accent font-semibold">indie projects</span> and exploring the endless possibilities of modern web development.
         </p>
       </div>
