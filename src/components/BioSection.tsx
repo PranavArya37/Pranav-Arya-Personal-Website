@@ -71,6 +71,15 @@ const BioSection: React.FC = () => {
               </p>
             </div>
 
+            <div className="bg-dark-700 rounded-lg p-4 border border-gray-600">
+              <p className="text-gray-300 mb-2">
+                For a quick summary of my profile, you can also try this command in your terminal:
+              </p>
+              <code className="text-accent font-mono bg-black px-3 py-2 rounded text-sm">
+                npx pranavarya
+              </code>
+            </div>
+
             {/* Social Links */}
             <div className="flex space-x-6">
               {socialLinks.map(({ icon: Icon, href, label }) => (
