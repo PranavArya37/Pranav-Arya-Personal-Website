@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keyboard Tester & Stuck Key Detector</title>
+    <title>Keyboard Tester - Pranav Arya</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Test your keyboard for stuck keys and malfunctioning keys. A diagnostic tool to help identify keyboard issues.">
+    <meta name="author" content="Pranav Arya">
+    <meta name="keywords" content="keyboard tester, stuck key detector, keyboard diagnostic, key testing tool, Pranav Arya">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Keyboard Tester - Pranav Arya">
+    <meta property="og:description" content="Test your keyboard for stuck keys and malfunctioning keys. A diagnostic tool to help identify keyboard issues.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pranavarya.in/keyboard-tester/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            background-color: #0a0a0a;
             min-height: 100vh;
             font-family: 'Inter', system-ui, sans-serif;
         }
-        
+
         .key {
             transition: all 0.15s ease;
             position: relative;
             overflow: hidden;
         }
-        
+
         .key::before {
             content: '';
             position: absolute;
@@ -25,36 +41,36 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            background: linear-gradient(135deg, rgba(1, 95, 252, 0.1), rgba(1, 95, 252, 0.05));
             opacity: 0;
             transition: opacity 0.15s ease;
         }
-        
+
         .key:hover::before {
             opacity: 1;
         }
-        
+
         .key.active {
-            background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
-            box-shadow: 0 0 20px rgba(99, 102, 241, 0.6), 0 0 40px rgba(139, 92, 246, 0.4);
+            background: linear-gradient(135deg, #015FFC, #0147d1) !important;
+            box-shadow: 0 0 20px rgba(1, 95, 252, 0.6), 0 0 40px rgba(1, 95, 252, 0.4);
             transform: translateY(-2px);
         }
-        
+
         .key.stuck {
             background: linear-gradient(135deg, #ef4444, #dc2626) !important;
             box-shadow: 0 0 20px rgba(239, 68, 68, 0.6), 0 0 40px rgba(220, 38, 38, 0.4);
             animation: pulse-red 1s infinite;
         }
-        
+
         @keyframes pulse-red {
             0%, 100% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.6), 0 0 40px rgba(220, 38, 38, 0.4); }
             50% { box-shadow: 0 0 30px rgba(239, 68, 68, 0.8), 0 0 60px rgba(220, 38, 38, 0.6); }
         }
-        
+
         .log-entry {
             animation: slideIn 0.3s ease;
         }
-        
+
         @keyframes slideIn {
             from {
                 opacity: 0;
@@ -65,14 +81,24 @@
                 transform: translateX(0);
             }
         }
-        
+
         .glow-text {
-            text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+            text-shadow: 0 0 10px rgba(1, 95, 252, 0.3);
         }
     </style>
 </head>
 <body class="p-4 md:p-8">
     <div class="max-w-7xl mx-auto">
+        <!-- Back to Home Button -->
+        <div class="mb-6">
+            <a href="/" class="inline-flex items-center text-gray-400 hover:text-white transition-colors duration-300">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Back to Home
+            </a>
+        </div>
+
         <!-- Header -->
         <div class="text-center mb-8">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 glow-text">Keyboard Tester</h1>
@@ -97,11 +123,11 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                 <div>
                     <p class="text-gray-400 text-xs uppercase">Keys Pressed</p>
-                    <p id="pressedCount" class="text-2xl font-bold text-indigo-400">0</p>
+                    <p id="pressedCount" class="text-2xl font-bold" style="color: #015FFC;">0</p>
                 </div>
                 <div>
                     <p class="text-gray-400 text-xs uppercase">Active Keys</p>
-                    <p id="activeCount" class="text-2xl font-bold text-purple-400">0</p>
+                    <p id="activeCount" class="text-2xl font-bold" style="color: #0147d1;">0</p>
                 </div>
                 <div>
                     <p class="text-gray-400 text-xs uppercase">Stuck Keys</p>
@@ -191,7 +217,7 @@
 
             <!-- Row 5: ZXCV -->
             <div class="flex gap-1 mb-1 justify-center">
-                <div data-key="ShiftLeft" class="key bg-indigo-900 hover:bg-indigo-800 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-indigo-600 w-24">Shift</div>
+                <div data-key="ShiftLeft" class="key rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border w-24" style="background-color: #1a3a6b; border-color: #015FFC;">Shift</div>
                 <div data-key="KeyZ" class="key bg-gray-800 hover:bg-gray-700 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-gray-600 w-12">Z</div>
                 <div data-key="KeyX" class="key bg-gray-800 hover:bg-gray-700 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-gray-600 w-12">X</div>
                 <div data-key="KeyC" class="key bg-gray-800 hover:bg-gray-700 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-gray-600 w-12">C</div>
@@ -202,18 +228,18 @@
                 <div data-key="Comma" class="key bg-gray-800 hover:bg-gray-700 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-gray-600 w-12">,</div>
                 <div data-key="Period" class="key bg-gray-800 hover:bg-gray-700 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-gray-600 w-12">.</div>
                 <div data-key="Slash" class="key bg-gray-800 hover:bg-gray-700 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-gray-600 w-12">/</div>
-                <div data-key="ShiftRight" class="key bg-indigo-900 hover:bg-indigo-800 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-indigo-600 w-24">Shift</div>
+                <div data-key="ShiftRight" class="key rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border w-24" style="background-color: #1a3a6b; border-color: #015FFC;">Shift</div>
             </div>
 
             <!-- Row 6: Bottom Row -->
             <div class="flex gap-1 justify-center">
-                <div data-key="ControlLeft" class="key bg-indigo-900 hover:bg-indigo-800 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-indigo-600 w-16">Ctrl</div>
-                <div data-key="MetaLeft" class="key bg-indigo-900 hover:bg-indigo-800 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-indigo-600 w-16">Win</div>
-                <div data-key="AltLeft" class="key bg-indigo-900 hover:bg-indigo-800 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-indigo-600 w-16">Alt</div>
+                <div data-key="ControlLeft" class="key rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border w-16" style="background-color: #1a3a6b; border-color: #015FFC;">Ctrl</div>
+                <div data-key="MetaLeft" class="key rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border w-16" style="background-color: #1a3a6b; border-color: #015FFC;">Win</div>
+                <div data-key="AltLeft" class="key rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border w-16" style="background-color: #1a3a6b; border-color: #015FFC;">Alt</div>
                 <div data-key="Space" class="key bg-gray-800 hover:bg-gray-700 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-gray-600 flex-1">Space</div>
-                <div data-key="AltRight" class="key bg-indigo-900 hover:bg-indigo-800 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-indigo-600 w-16">Alt</div>
-                <div data-key="MetaRight" class="key bg-indigo-900 hover:bg-indigo-800 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-indigo-600 w-16">Win</div>
-                <div data-key="ControlRight" class="key bg-indigo-900 hover:bg-indigo-800 rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border border-indigo-600 w-16">Ctrl</div>
+                <div data-key="AltRight" class="key rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border w-16" style="background-color: #1a3a6b; border-color: #015FFC;">Alt</div>
+                <div data-key="MetaRight" class="key rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border w-16" style="background-color: #1a3a6b; border-color: #015FFC;">Win</div>
+                <div data-key="ControlRight" class="key rounded px-3 py-2 text-white text-xs font-mono cursor-pointer border w-16" style="background-color: #1a3a6b; border-color: #015FFC;">Ctrl</div>
             </div>
 
             <!-- Arrow Keys -->

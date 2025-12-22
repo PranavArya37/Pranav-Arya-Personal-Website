@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             {['Home', 'About', 'Work', 'Contact'].map((item) => (
               <button
                 key={item}
@@ -47,6 +47,12 @@ const Navbar: React.FC = () => {
                 {item}
               </button>
             ))}
+            <a
+              href="/keyboard-tester/keyboard-tester.html"
+              className="text-white hover:text-accent transition-colors duration-300 font-light"
+            >
+              Keyboard Tester
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -72,6 +78,12 @@ const Navbar: React.FC = () => {
                   {item}
                 </button>
               ))}
+              <a
+                href="/keyboard-tester/keyboard-tester.html"
+                className="text-white hover:text-accent transition-colors duration-300 font-light text-left"
+              >
+                Keyboard Tester
+              </a>
             </div>
           </div>
         )}
