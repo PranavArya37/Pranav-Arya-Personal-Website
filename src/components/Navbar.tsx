@@ -24,11 +24,10 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-black bg-opacity-95 backdrop-blur-md'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
@@ -37,7 +36,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center">
+          <div className="hidden md:flex space-x-8">
             {['Home', 'About', 'Work', 'Contact'].map((item) => (
               <button
                 key={item}
@@ -47,12 +46,6 @@ const Navbar: React.FC = () => {
                 {item}
               </button>
             ))}
-            <a
-              href="/keyboard-tester/keyboard-tester.html"
-              className="text-white hover:text-accent transition-colors duration-300 font-light"
-            >
-              Keyboard Tester
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,12 +71,6 @@ const Navbar: React.FC = () => {
                   {item}
                 </button>
               ))}
-              <a
-                href="/keyboard-tester/keyboard-tester.html"
-                className="text-white hover:text-accent transition-colors duration-300 font-light text-left"
-              >
-                Keyboard Tester
-              </a>
             </div>
           </div>
         )}
