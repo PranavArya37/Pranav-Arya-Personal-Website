@@ -93,7 +93,7 @@ const BioSection: React.FC = () => {
           <div ref={imageRef} className="relative h-full">
             <div className="h-full rounded-lg overflow-hidden">
               <img
-                src="/Pranav's New Image.jpg"
+                src="/images/Pranav-Arya-Main-Image.jpg"
                 alt="Pranav Arya"
                 className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-500"
               />

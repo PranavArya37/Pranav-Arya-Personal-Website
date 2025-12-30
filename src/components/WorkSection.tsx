@@ -16,37 +16,37 @@ const projects: ProjectProps[] = [
   {
     title: 'Stay Awake',
     description: 'Keep your screen awake! A web app preventing sleep mode only while this tab is active (foreground). Features draggable & toggleable widgets: Clock ⏰, Battery 🔋, To-Do List ✅, and Pomodoro Timer 🍅. Installable as a PWA.',
-    image: '/StayAwake_Minimal_Mode_Awake.jpeg',
+    image: 'images/StayAwake_Minimal_Mode_Awake.jpeg',
     link: 'https://stayawake.pages.dev',
   },
   {
     title: 'InstaCaption',
     description: 'AI-powered Instagram caption generator. Upload your photo and get creative captions instantly! Built with Next.js, Genkit, and ShadCN UI.',
-    image: '/InstaCaption-Full.jpeg',
+    image: 'images/InstaCaption-Full.jpeg',
     link: 'https://instacaptionxp.vercel.app/',
   },
   {
     title: 'Business Directory App',
     description: 'A React Native mobile app built with Expo that makes exploring local businesses easy! Search, discover, and connect with businesses in your community. Built with Firebase and Clerk.',
-    image: '/HomeScreen.PNG',
+    image: '/images/Business-Directory-HomeScreen.PNG',
     link: 'https://github.com/PranavArya37/Business-Directory-App',
   },
   {
     title: 'CurrencyXpress',
     description: 'CurrencyXpress is a modern web application that allows users to convert amounts between various currencies with real-time exchange rates. It also provides a history of past conversions.',
-    image: '/currencyXpress - Full Screenshot 1.jpeg',
+    image: '/images/currencyXpress-Full.jpeg',
     link: 'https://currencyxpress.vercel.app/',
   },
   {
     title: 'Personal Task Manager',
     description: 'Personal Task Manager is a React Native application built with Expo, designed to help users manage their tasks efficiently. This app allows users to create, update, and delete tasks, filter tasks based on their status, and set due dates for tasks.',
-    image: '/splash-personal-task-manager.png',
+    image: 'images/splash-personal-task-manager.png',
     link: 'https://github.com/PranavArya37/PersonalTaskManager-App',
   },
   {
     title: 'Kaleidoscope',
     description: 'Interactive kaleidoscope using p5.js that generates symmetrical patterns based on mouse movement.',
-    image: '/kaleidoscope-pattern.jpg',
+    image: 'images/kaleidoscope-pattern.jpg',
     link: 'https://pranavarya37.github.io/Kaleidoscope/',
   },
 ];
@@ -57,7 +57,7 @@ const WorkSection: React.FC = () => {
 
   useEffect(() => {
     const cards = cardsRef.current;
-    
+
     cards.forEach((card, index) => {
       gsap.fromTo(
         card,
@@ -97,7 +97,7 @@ const WorkSection: React.FC = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            A showcase of my recent software development projects, demonstrating 
+            A showcase of my recent software development projects, demonstrating
             my skills in full-stack development and modern web technologies.
           </p>
         </div>
@@ -129,7 +129,7 @@ const WorkSection: React.FC = () => {
                   <ExternalLink className="text-white" size={24} />
                 </div>
               </div>
-              
+
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold text-white group-hover:text-accent transition-colors duration-300">
                   {project.title}
