@@ -1,7 +1,8 @@
 {
-  "cleanUrls": true,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/((?!stayawake|keyboard-tester).*)", "dest": "/index.html" }
+  "rewrites": [
+    {
+      "source": "/((?!stayawake|keyboard-tester).*)",
+      "destination": "/index.html"
+    }
   ]
 }
