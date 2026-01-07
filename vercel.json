@@ -1,12 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/stayawake",
-      "destination": "https://stayawake.pages.dev"
-    },
-    {
-      "source": "/stayawake/:path*",
-      "destination": "https://stayawake.pages.dev/:path*"
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
     }
   ]
 }

@@ -11,9 +11,9 @@ const Footer: React.FC = () => {
               Made with ❤️ by Pranav Arya
             </p>
           </div>
-          
+
           <div className="text-gray-400 text-sm">
-            © 2025 Pranav Arya. All rights reserved.
+            © {new Date().getFullYear()} Pranav Arya. All rights reserved.
           </div>
         </div>
       </div>

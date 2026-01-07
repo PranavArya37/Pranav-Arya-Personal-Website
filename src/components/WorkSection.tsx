@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { ExternalLink } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'react-router-dom';
+import Projects from './Projects';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -140,6 +142,14 @@ const WorkSection: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center mt-10">
+          <Link
+            to="/Projects"
+            className="inline-flex items-center px-6 py-3 bg-accent hover:bg-blue-700 text-white rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
+          >
+            Check More Projects
+          </Link>
         </div>
       </div>
     </section>

@@ -113,7 +113,7 @@ const BioSection: React.FC = () => {
                 Beyond coding, I'm deeply curious about everything around me—always questioning the "why" and "how" behind every task I undertake. I'm an avid space enthusiast who enjoys reading books, listening to music, and exploring new AI tools that push the boundaries of what's possible.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                When I'm not building applications, you'll find me vibe coding on personal projects, diving deep into new technologies, or simply exploring and learning about anything that sparks my curiosity.
+                When I'm not building applications, you'll find me listening to music, diving deep into new technologies, or simply exploring and learning about anything that sparks my curiosity.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 For a quick summary of my profile, you can also try this command in your terminal:
